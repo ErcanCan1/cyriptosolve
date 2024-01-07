@@ -1,22 +1,21 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <title></title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyripto Solve</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h2>Title</h2>
-    <label>Shift (1-25):</label>
-    <input type="number" id="shift" value="1" min="1" max="25" />
-    <br />
-    <label>Enter your text:</label><br />
-    <!-- Added the missing id attribute for the textarea -->
-    <textarea id="plaintext" placeholder="Enter your text"></textarea>
-    <button onclick="translate()">Encrypt</button>
-    <!-- Added button to trigger the translation -->
-    <h3>Translated text:</h3>
+    <h2>Cyripto Solve</h2>
+    <label for="shift">Shift (1-25):</label>
+    <input type="number" id="shift" value="1" min="1" max="25">
+    <label for="plaintext">Enter your text</label>
+    <textarea placeholder="Bir metin giriniz." id="plaintext" cols="30"
+      rows="10"></textarea>
+    <h3>Translated text</h3>
     <p id="output"></p>
-
-    <scrip src="cyripto.js"t></scrip>
+    <script src="cyripto.js"></script>
   </body>
 </html>
