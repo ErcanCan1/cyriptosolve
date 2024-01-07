@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Title</h2>
+    <label>Shift (1-25):</label>
+    <input type="number" id="shift" value="1" min="1" max="25" />
+    <br />
+    <label>Enter your text:</label><br />
+    <!-- Added the missing id attribute for the textarea -->
+    <textarea id="plaintext" placeholder="Enter your text"></textarea>
+    <button onclick="translate()">Encrypt</button>
+    <!-- Added button to trigger the translation -->
+    <h3>Translated text:</h3>
+    <p id="output"></p>
+
+    <scrip src="cyripto.js"t></scrip>
+  </body>
+</html>
